@@ -68,7 +68,7 @@ pub fn version_age(mut state: State) -> (State, Response<Body>) {
         chrono_humanize::Tense::Present,
     );
 
-    let mut ret = String::with_capacity(364 + ver.len() + age.len());
+    let mut ret = String::with_capacity(420 + ver.len() + age.len());
     write!(ret,
            r#"<!DOCTYPE html>
 <html>

@@ -68,13 +68,13 @@ pub fn version_age(mut state: State) -> (State, Response<Body>) {
         chrono_humanize::Tense::Present,
     );
 
-    let mut ret = String::with_capacity(420 + ver.len() + age.len());
+    let mut ret = String::with_capacity(372 + ver.len() + age.len());
     write!(ret,
            r#"<!DOCTYPE html>
 <html>
   <head>
       <title>How old is minecraft?</title>
-      <link rel="\#shortcut icon" type="image/png" href="https://dl.mcfix.org/howoldisminecraft.today/favicon.png">
+      <link rel="\#shortcut icon" type="image/png" href="/favicon.png">
   </head>
   <body>
   <h1 id="age" style="font-size: 32px; font-size: 3vw; height: 100%; width: 100%; display: flex; position: fixed; align-items: center; justify-content: center;">Minecraft {} is {} old</h1><br>

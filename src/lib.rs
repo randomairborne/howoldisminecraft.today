@@ -38,7 +38,7 @@ pub fn version_age(mut state: State) -> (State, Response<Body>) {
             let response = create_response(
                 &state,
                 StatusCode::NOT_FOUND,
-                mime::TEXT_PLAIN,
+                mime::TEXT_HTML_UTF_8,
                 r#"<!DOCTYPE html>
 <html>
   <head>
